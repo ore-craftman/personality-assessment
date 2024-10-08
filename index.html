@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personality Assessment</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="text-gray-800">
+    <!-- Navbar -->
+    <header class="sticky top-0 w-full z-10">
+      <nav class="bg-gray-50 border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://www.assesspersonality.com/assets/logo.png"
+              alt=""
+              class="w-32"
+            />
+            <!-- <h3
+              class="self-center text-sm font-bold whitespace-nowrap dark:text-white uppercase"
+            >
+              Northern Star Institute
+            </h3> -->
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-white text-sm font-semibold bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 px-3 text-gray-900 text-sm font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="block text-sm font-semibold py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://northernstarministries.org/contact-us/"
+                  target="_blank"
+                  class="block py-2 px-3 text-sm font-semibold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+    <section class="py-20 bg- sm:py-20">
+      <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p
+            class="max-w-4xl mx-auto mb-4 text-4xl font-bold leading-tight text-gray-900 sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight"
+          >
+            Discover Your True Self: Unlock the Power of Knowing Your
+            Personality
+          </p>
+          <h1 class="max-w-4xl mx-auto px-6 text-md text-gray-600 font-inter">
+            Understanding your personality is the key to unlocking your
+            potential. With our comprehensive personality assessment, you'll
+            gain valuable insights into your strengths, preferences, and unique
+            traits that can transform your life. Whether you're seeking clarity
+            in your career, striving to improve relationships, or aiming for
+            personal growth, knowing your personality provides a roadmap for
+            success. It helps you make better decisions, communicate
+            effectively, and find fulfillment in all areas of life. Take the
+            first step towards self-awareness and create a future that aligns
+            with who you truly are.
+          </h1>
+          <div
+            class="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex my-9"
+          >
+            <a
+              href="#"
+              title=""
+              class="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-blue-600 border-2 border-transparent sm:w-auto rounded-xl hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
+              role="button"
+            >
+              Start Personality Assessment Test
+            </a>
+            <a
+              href="#"
+              class="inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-blue-600 hover:text-white transition-all duration-200 bg-blue-100 border-2 border-blue-600 sm:w-auto rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
+              role="button"
+              >Sign In</a
+            >
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="relative mx-auto py-8 md:py-18">
+          <div class="lg:max-w-3xl lg:mx-auto">
+            <img
+              style="border-radius: 10px"
+              class="px-4 md:px-8 rounded-2xl border bg-white bg-cover h-[350px] mx-auto"
+              src="./asset/home.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personality section -->
+    <section class="pt-12 pb-28 px-6 lg:px-16">
+      <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold text-gray-800 mb-8">Personality Types</h2>
+        <p class="text-lg text-gray-600 mb-12">
+          The ancient theory of the four temperaments—<strong
+            >Choleric, Sanguine, Melancholy</strong
+          >, and <strong>Phlegmatic</strong>—categorizes people based on their
+          natural tendencies and emotional dispositions. While this model is
+          largely theoretical and often simplified, it offers an interesting
+          lens to view personalities. Explore each temperament to discover key
+          traits and real-life examples from politics, sports, and business.
+        </p>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center"
+        >
+          <!-- Choleric Personality -->
+          <a
+            href="/choleric"
+            class="bg-white p-6 shadow-lg rounded-lg transition duration-300 hover:bg-indigo-600 hover:text-white"
+          >
+            <h3 class="text-xl font-semibold mb-4">Choleric Personality</h3>
+            <p class="text-gray-600 hover:text-white">
+              Known for being ambitious, assertive, and decisive, Cholerics are
+              natural leaders who thrive in fast-paced environments.
+            </p>
+          </a>
+
+          <!-- Sanguine Personality -->
+          <a
+            href="/sanguine"
+            class="bg-white p-6 shadow-lg rounded-lg transition duration-300 hover:bg-indigo-600 hover:text-white"
+          >
+            <h3 class="text-xl font-semibold mb-4">Sanguine Personality</h3>
+            <p class="text-gray-600 hover:text-white">
+              Sanguines are sociable, outgoing, and enthusiastic, often bringing
+              joy and energy to their environments.
+            </p>
+          </a>
+
+          <!-- Melancholy Personality -->
+          <a
+            href="/melancholy"
+            class="bg-white p-6 shadow-lg rounded-lg transition duration-300 hover:bg-indigo-600 hover:text-white"
+          >
+            <h3 class="text-xl font-semibold mb-4">Melancholy Personality</h3>
+            <p class="text-gray-600 hover:text-white">
+              Analytical and thoughtful, Melancholics are detail-oriented, often
+              focusing on perfection and quality in all they do.
+            </p>
+          </a>
+
+          <!-- Phlegmatic Personality -->
+          <a
+            href="/phlegmatic"
+            class="bg-white p-6 shadow-lg rounded-lg transition duration-300 hover:bg-indigo-600 hover:text-white"
+          >
+            <h3 class="text-xl font-semibold mb-4">Phlegmatic Personality</h3>
+            <p class="text-gray-600 hover:text-white">
+              Calm, patient, and harmonious, Phlegmatics are great peacemakers
+              and often bring stability and balance to any situation.
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About section -->
+    <div id="about" class="relative bg-white overflow-hidden pt-16">
+      <div class="max-w-7xl mx-auto">
+        <div
+          class="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"
+        >
+          <svg
+            class="hidden lg:block absolute right-0 inset-y-0 h-full w-48 text-white transform translate-x-1/2"
+            fill="currentColor"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            aria-hidden="true"
+          >
+            <polygon points="50,0 100,0 50,100 0,100"></polygon>
+          </svg>
+
+          <div class="pt-1"></div>
+
+          <main
+            class="mt-10 mx-auto max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28"
+          >
+            <div class="text-left">
+              <h2
+                class="my-6 text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl"
+              >
+                Who We Are
+              </h2>
+
+              <p>
+                At <b>Northern Star Consulting</b>, an arm of Northern Star
+                Ministries, we are committed to guiding individuals on a
+                transformative journey of self-discovery. Our mission is to
+                empower people to understand themselves at a deeper level by
+                teaching them about personality types. We believe that true
+                self-awareness is the key to unlocking one's potential and
+                living a more fulfilling life, both personally and
+                professionally.
+              </p>
+              <br />
+              <p>
+                Our firm offers a comprehensive
+                <b>personality assessment</b> designed to help you uncover your
+                unique personality type. Whether you're looking to gain insights
+                into your strengths and weaknesses, choose a career path that
+                aligns with your true self, or improve your relationships, our
+                tools and resources provide the clarity and guidance you need.
+              </p>
+
+              <br />
+
+              <p>
+                At Northern Star Consulting, we believe that knowing yourself is
+                the first step toward growth and success. Through our
+                assessments and expert guidance, we aim to help you embrace who
+                you are, navigate life's challenges with confidence, and build
+                stronger connections with others.
+              </p>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <img
+          class="h-[550px] w-full object-cover object-top sm:h-72 md:h-[550px] lg:w-full lg:h-full"
+          src="./asset/about.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="py-12 px-6 lg:px-16" id="services">
+      <div class="max-w-7xl mx-auto">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-8">
+          Our Services
+        </h2>
+        <p class="text-lg text-center text-gray-600 mb-12">
+          At Northern Star Consulting, we are dedicated to helping individuals
+          discover their potential and navigate their personal and professional
+          lives with clarity. Our services are tailored to empower you in
+          leadership, career choices, and relationships, ensuring a holistic
+          approach to self-discovery and development.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Leadership Training -->
+          <div
+            class="bg-white p-6 shadow-lg hover:shadow-xl hover:text-blue-600 text-gray-900 rounded-lg"
+          >
+            <h3 class="text-xl font-semibold mb-4">Leadership Training</h3>
+            <p class="text-gray-600 mb-4">
+              Our Leadership Training program is designed to equip aspiring and
+              current leaders with the essential skills needed to inspire,
+              motivate, and lead effectively. Grounded in an understanding of
+              personality types, our training helps you identify your leadership
+              style, strengthen your decision-making abilities, and develop
+              emotional intelligence.
+            </p>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Identify and develop your unique leadership style</li>
+              <li>Enhance communication and conflict resolution skills</li>
+              <li>Strengthen team dynamics and build high-performing teams</li>
+              <li>Lead with emotional intelligence and self-awareness</li>
+            </ul>
+          </div>
+
+          <!-- Career Alignment -->
+          <div
+            class="bg-white p-6 shadow-lg shadow-lg hover:shadow-xl hover:text-blue-600 rounded-lg"
+          >
+            <h3 class="text-xl font-semibold mb-4">Career Alignment</h3>
+            <p class="text-gray-600 mb-4">
+              Choosing the right career path is a vital step toward a fulfilling
+              and successful life. Our Career Alignment service is designed to
+              help individuals align their career choices with their natural
+              strengths, passions, and personality type.
+            </p>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Discover your ideal career based on your personality type</li>
+              <li>Gain clarity on your strengths and areas for growth</li>
+              <li>Navigate career transitions with confidence</li>
+              <li>Build a personalized action plan for success</li>
+            </ul>
+          </div>
+
+          <!-- Relationship Development -->
+          <div
+            class="bg-white p-6 shadow-lg shadow-lg hover:shadow-xl hover:text-blue-600 rounded-lg"
+          >
+            <h3 class="text-xl font-semibold mb-4">Relationship Development</h3>
+            <p class="text-gray-600 mb-4">
+              Our Relationship Development service focuses on improving
+              interpersonal connections by helping you understand your
+              communication style and how it interacts with others. We provide
+              tools to foster stronger, empathetic relationships in all areas of
+              life.
+            </p>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Improve communication skills and emotional awareness</li>
+              <li>Understand and appreciate personality differences</li>
+              <li>Strengthen trust and resolve conflicts more effectively</li>
+              <li>Build deeper, more meaningful relationships</li>
+            </ul>
+          </div>
+
+          <!-- Marriage Counseling -->
+          <div
+            class="bg-white p-6 shadow-lg shadow-lg hover:shadow-xl hover:text-blue-600 rounded-lg"
+          >
+            <h3 class="text-xl font-semibold mb-4">Marriage Counseling</h3>
+            <p class="text-gray-600 mb-4">
+              Our Marriage Counseling service helps couples enhance their
+              relationships by understanding their personality types and how
+              these traits affect their partnership. Learn how to better
+              communicate, resolve conflicts, and build a harmonious marriage.
+            </p>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Strengthen communication and emotional intimacy</li>
+              <li>Resolve conflicts with greater understanding</li>
+              <li>Appreciate your partner's personality and needs</li>
+              <li>Create a long-term plan for marital growth</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-gray-300 py-10 mt-12">
+      <div class="max-w-7xl mx-auto px-6 lg:px-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- About Us Section -->
+          <div>
+            <h3 class="text-lg font-semibold text-gray-100 mb-4">About</h3>
+            <p class="text-gray-400">
+              At Northern Star Consulting, we are dedicated to helping
+              individuals discover their potential and navigate their personal
+              and professional lives with clarity. Let us guide you towards a
+              more self-aware and purposeful life.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-semibold text-gray-100 mb-4">
+              Quick Links
+            </h3>
+            <ul class="text-gray-400 space-y-2">
+              <li>
+                <a
+                  href="#about"
+                  class="hover:text-indigo-500 transition duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="hover:text-indigo-500 transition duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://northernstarministries.org/contact-us/"
+                  target="_blank"
+                  class="hover:text-indigo-500 transition duration-300"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Section -->
+          <div>
+            <h3 class="text-lg font-semibold text-gray-100 mb-4">Contact Us</h3>
+            <p class="text-gray-400 mb-2">
+              Email:
+              <a
+                href="mailto:info@northernstar.com"
+                class="hover:text-indigo-500 transition duration-300"
+                >info@northernstar.com</a
+              >
+            </p>
+            <p class="text-gray-400 mb-2">Phone: +123-456-7890</p>
+            <p class="text-gray-400">
+              Address: 123 Northern Star Ave, City, Country
+            </p>
+          </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div
+          class="mt-8 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-500">
+            &copy; 2024 Northern Star Consulting. All rights reserved.
+          </p>
+
+          <!-- Social Media Links -->
+          <div class="mt-4 md:mt-0">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-indigo-500 mx-2 transition duration-300"
+            >
+              <i class="fab fa-facebook-f"></i>
+              <!-- Facebook Icon (FontAwesome or similar) -->
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-indigo-500 mx-2 transition duration-300"
+            >
+              <i class="fab fa-twitter"></i>
+              <!-- Twitter Icon -->
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-indigo-500 mx-2 transition duration-300"
+            >
+              <i class="fab fa-linkedin-in"></i>
+              <!-- LinkedIn Icon -->
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-indigo-500 mx-2 transition duration-300"
+            >
+              <i class="fab fa-instagram"></i>
+              <!-- Instagram Icon -->
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
