@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanguine Personality</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Masonry Grid */
+      .masonry-grid {
+        display: flex;
+        align-items: start;
+        gap: 2em;
+      }
+
+      .masonry-item {
+        width: 350px;
+        max-width: 100%;
+      }
+
+      .masonry-item img {
+        width: 100%;
+        height: 270px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="sticky top-0 w-full z-10">
+      <nav class="bg-gray-50 border-gray-200 dark:bg-gray-900">
+        <div
+          class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        >
+          <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="https://www.assesspersonality.com/assets/logo.png"
+              alt=""
+              class="w-32"
+            />
+          </a>
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="/"
+                  class="block py-2 px-3 text-white text-sm font-semibold bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block py-2 px-3 text-gray-900 text-sm font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="block text-sm font-semibold py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://northernstarministries.org/contact-us/"
+                  target="_blank"
+                  class="block py-2 px-3 text-sm font-semibold text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="bg-gray-100 text-gray-800 pt-2">
+      <!-- Sanguine Personality Section -->
+      <section class="py-12 px-6 lg:px-16">
+        <div class="max-w-7xl mx-auto">
+          <h2 class="text-3xl font-bold text-gray-800">Sanguine Personality</h2>
+          <p class="text-lg text-gray-600 mb-12">
+            The sanguine temperament is marked by a sociable, enthusiastic, and
+            optimistic nature. Sanguine individuals are outgoing, energetic, and
+            love to be the center of attention. Their natural charisma makes
+            them great motivators, though they may struggle with consistency on
+            long-term projects.
+          </p>
+
+          <!-- Masonry Grid of Famous Sanguine Individuals -->
+          <div class="masonry-grid">
+            <!-- Item 1 -->
+            <div class="masonry-item">
+              <img
+                src="./asset/John F Kennedy.jpg"
+                alt="John F. Kennedy"
+                class="shadow-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800 mt-4">
+                Political Leader: John F. Kennedy
+              </h3>
+              <p class="text-gray-600">
+                John F. Kennedy's charismatic and charming demeanor, as well as
+                his ability to inspire hope and optimism, reflect his sanguine
+                nature.
+              </p>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="masonry-item">
+              <img
+                src="./asset/Muhammad Ali.jpg"
+                alt="Muhammad Ali"
+                class="shadow-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800 mt-4">
+                Sports Star: Muhammad Ali
+              </h3>
+              <p class="text-gray-600">
+                Muhammad Ali's larger-than-life personality, his confident
+                speeches, and love for the spotlight make him a classic sanguine
+                figure.
+              </p>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="masonry-item">
+              <img
+                src="./asset/Richard Branson.jpg"
+                alt="Richard Branson"
+                class="shadow-lg"
+              />
+              <h3 class="text-xl font-semibold text-gray-800 mt-4">
+                Business Leader: Richard Branson
+              </h3>
+              <p class="text-gray-600">
+                Richard Branson's adventurous spirit, bold personality, and love
+                for risk-taking are the quintessential traits of a sanguine
+                entrepreneur.
+              </p>
+            </div>
+          </div>
+
+          <!-- Behavior Characteristics -->
+          <div class="mb-8 mt-12">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              Behavior Characteristics
+            </h3>
+            <ul class="list-disc list-inside text-gray-600">
+              <li>Extroverted and lively</li>
+              <li>Highly social and talkative</li>
+              <li>Optimistic and spontaneous</li>
+              <li>Enthusiastic and fun-loving</li>
+              <li>Can struggle with focus or organization</li>
+            </ul>
+          </div>
+
+          <!-- Careers suited for Sanguine Individuals -->
+          <div class="mb-8">
+            <h3 class="text-2xl font-semibold text-gray-800 mb-4">
+              Careers suited for Sanguine Individuals
+            </h3>
+            <ul class="list-decimal list-inside text-gray-600">
+              <li>
+                <strong>Salesperson:</strong> Sanguines excel in sales due to
+                their charm, communication skills, and ability to connect with
+                people.
+              </li>
+              <li>
+                <strong>Actor/Performer:</strong> Their love for attention and
+                ability to entertain make them well-suited for careers in acting
+                or performing arts.
+              </li>
+              <li>
+                <strong>Event Planner:</strong> Planning events requires high
+                energy, social interaction, and creativity, which are natural
+                strengths of a sanguine.
+              </li>
+              <li>
+                <strong>Marketing/Public Relations Specialist:</strong>
+                Sanguines thrive in the dynamic, people-oriented world of
+                marketing and public relations, where creativity and networking
+                are essential.
+              </li>
+              <li>
+                <strong>Tour Guide/Travel Host:</strong> Their extroverted
+                nature and enthusiasm make sanguines great at engaging with
+                groups and sharing information in an exciting way.
+              </li>
+              <li>
+                <strong>Teacher/Trainer:</strong> Engaging with students,
+                creating a lively learning environment, and using their
+                enthusiasm to inspire others is ideal for sanguine
+                personalities.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer Section -->
+      <footer class="bg-gray-900 text-gray-300 py-10 mt-12">
+        <div class="max-w-7xl mx-auto px-6 lg:px-16">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Us Section -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-100 mb-4">About</h3>
+              <p class="text-gray-400">
+                At Northern Star Consulting, we are dedicated to helping
+                individuals discover their potential and navigate their personal
+                and professional lives with clarity. Let us guide you towards a
+                more self-aware and purposeful life.
+              </p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-100 mb-4">
+                Quick Links
+              </h3>
+              <ul class="text-gray-400 space-y-2">
+                <li>
+                  <a
+                    href="#about"
+                    class="hover:text-indigo-500 transition duration-300"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#services"
+                    class="hover:text-indigo-500 transition duration-300"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/benefits.html"
+                    class="hover:text-indigo-500 transition duration-300"
+                    >Benefits</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://northernstarministries.org/contact-us/"
+                    target="_blank"
+                    class="hover:text-indigo-500 transition duration-300"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div>
+              <h3 class="text-lg font-semibold text-gray-100 mb-4">
+                Contact Us
+              </h3>
+              <p class="text-gray-400 mb-2">Phone: (404) 246-5668</p>
+
+              <p class="text-gray-400 mb-2">
+                Email:
+                <a
+                  href="mailto:info@northernstar.com"
+                  class="hover:text-indigo-500 transition duration-300"
+                  >olatundeadepoju@yahoo.com</a
+                >
+              </p>
+              <p class="text-gray-400">P.O. Box 2910, Stockbridge, Ga. 30281</p>
+            </div>
+          </div>
+
+          <!-- Bottom Footer -->
+          <div
+            class="mt-8 border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center"
+          >
+            <p class="text-gray-500">
+              &copy; 2024 Northern Star Consulting. All rights reserved.
+            </p>
+
+            <!-- Social Media Links -->
+            <div class="mt-4 md:mt-0">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-indigo-500 mx-2 transition duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+                <!-- Facebook Icon (FontAwesome or similar) -->
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-indigo-500 mx-2 transition duration-300"
+              >
+                <i class="fab fa-twitter"></i>
+                <!-- Twitter Icon -->
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-indigo-500 mx-2 transition duration-300"
+              >
+                <i class="fab fa-linkedin-in"></i>
+                <!-- LinkedIn Icon -->
+              </a>
+              <a
+                href="#"
+                class="text-gray-400 hover:text-indigo-500 mx-2 transition duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+                <!-- Instagram Icon -->
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
